@@ -1,6 +1,6 @@
 window.rightClickAnyway = false;
 
-document.addEventListener("keydown", () => {
+document.addEventListener("keydown", e => {
 	if (e.shiftKey) {
 		window.rightClickAnyway = !window.rightClickAnyway;
 	}
