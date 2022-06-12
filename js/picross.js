@@ -418,8 +418,8 @@ $(function() {
 					e.preventDefault();
 					this.mouseMode = 1;
 					
-					// VM: if shift is being held, right click
-					if (e.shiftKey) this.mouseMode = 3;
+					// VM: if shift or crl is being held, right click
+					if (e.shiftKey || e.ctrlKey) this.mouseMode = 3;
 					break;
 				case 3:
 					// right click
