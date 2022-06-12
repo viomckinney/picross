@@ -518,7 +518,10 @@ $(function() {
 				return;
 			}
 			
-			if (window.rightClickAnyway) e.which = 3;
+			if (window.rightClickAnyway) {
+				e.which = 3;
+				this.mouseMode = 3;
+			}
 
 			var target = $(e.target);
 			switch (e.which) {
