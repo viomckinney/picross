@@ -8,7 +8,7 @@ document.addEventListener("keydown", e => {
 })
 
 document.addEventListener("keyup", e => {
-	if (e.shiftKey) {
+	if (e.keyCode === 16) {
 		window.rightClickAnyway = false;
 		document.getElementsByClassName("title")[0].innerText = "PICROSS (left)";
 	}
