@@ -417,6 +417,9 @@ $(function() {
 					// left click
 					e.preventDefault();
 					this.mouseMode = 1;
+					
+					// VM: if shift is being held, right click
+					if (e.shiftKey) this.mouseMode = 3;
 					break;
 				case 3:
 					// right click
