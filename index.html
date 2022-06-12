@@ -1,10 +1,12 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
 		<title>Picross</title>
 		<meta charset="utf-8">
+		<meta name="description" content="Randomly generated picross puzzles you can solve in your browser. Features 11 difficulty levels, dark mode, local saves, and customizable seeds.">
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
-		<link rel="stylesheet" type="text/css" href="css/picross.css" />
+		<link rel="stylesheet" type="text/css" href="css/picross.css?20190803" />
 	</head>
 	<body>
 		<div class="container">
@@ -16,7 +18,11 @@
 					<h3>Progress</h3>
 					<span id="progress">0.0%</span>
 					<div class="custom"></div>
-					<button id="solve">Solve Puzzle</button>
+					<h3>Mistakes</h3>
+					<span id="mistakes">0</span>
+					<div class="custom">
+						<h5><a href="http://liouh.com/picross2">Allow multiple solutions</a></h5>
+					</div>
 				</div>
 				<div class="control-group">
 					<h3>Settings</h3>
@@ -56,12 +62,14 @@
 		</div>
 		<div class="footer">
 			Randomly generated <a href="http://en.wikipedia.org/wiki/Nonogram" target="_blank">picross puzzles</a>. Designed and written by <a href="http://liouh.com/home/">Henry Liou</a>.<br/>
-			Left click tiles to reveal, right click to mark as empty. Drag to select multiple at once.
+			Left click tiles to reveal, right click to mark as empty. Drag to select multiple at once.<br/>
+			Help keep this site ad-free. <a href="https://paypal.me/liouh" target="_blank">Buy me a coffee!</a> ☕
 		</div>
 		<script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 		<script type="text/javascript" src="js/underscore.js"></script>
 		<script type="text/javascript" src="js/backbone.js"></script>
 		<script type="text/javascript" src="js/seedrandom.js"></script>
-		<script type="text/javascript" src="js/picross.js"></script>
+		<script type="text/javascript" src="js/picross.js?20190803"></script>
+		<script type="text/javascript" src="/analytics.js"></script>
 	</body>
 </html>
