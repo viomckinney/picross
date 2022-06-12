@@ -1,3 +1,11 @@
+window.rightClickAnyway = false;
+
+document.addEventListener("keydown", () => {
+	if (e.shiftKey) {
+		window.rightClickAnyway = !window.rightClickAnyway;
+	}
+})
+
 $(function() {
 
 	// localStorage save format versioning
@@ -483,6 +491,11 @@ $(function() {
 		clickEnd: function(e) {
 			if(this.model.get('complete')) {
 				return;
+			}
+			
+			if (window.rightClickAnyway) {
+				e.which = 3;
+				this.mouseMode = 3;
 			}
 
 			var target = $(e.target);
