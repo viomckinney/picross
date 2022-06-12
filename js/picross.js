@@ -3,6 +3,7 @@ window.rightClickAnyway = false;
 document.addEventListener("keydown", e => {
 	if (e.shiftKey) {
 		window.rightClickAnyway = !window.rightClickAnyway;
+		document.getElementsByClassName("title")[0].innerText = "PICROSS (" + (rightClickAnyway ? "right" : "left") " + ")";
 	}
 })
 
