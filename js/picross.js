@@ -9,8 +9,11 @@ document.addEventListener("keydown", e => {
 
 document.addEventListener("keyup", e => {
 	if (e.keyCode === 16) {
-		window.rightClickAnyway = false;
-		document.getElementsByClassName("title")[0].innerText = "PICROSS (left)";
+		setTimeout(() => {
+			// give some leeway
+			window.rightClickAnyway = false;
+			document.getElementsByClassName("title")[0].innerText = "PICROSS (left)";
+		}, 100)
 	}
 })
 
