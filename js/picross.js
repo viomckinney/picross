@@ -500,7 +500,7 @@ $(function() {
 			
 			if (window.rightClickAnyway) {
 				e.which = 3;
-				this.mouseMode = 3;
+// 				this.mouseMode = 3;
 			}
 
 			var target = $(e.target);
